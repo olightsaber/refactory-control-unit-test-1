@@ -1,10 +1,11 @@
 <template>
     <div>
-        <Jumbotron class="w-full" :item="activeItem" />
-        <div class="flex flex-row " v-for="(item, index) in items" :key="index">
+        <div>
+            <Jumbotron :item="activeItem" />
+        </div>
+        <div class="flex" v-for="(item, index) in items" :key="index">
             <Thumbnail :item="item" @setActive="setActive" />     
         </div>
-       
     </div>
 </template>
 

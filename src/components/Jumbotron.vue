@@ -1,14 +1,9 @@
 <template>
-   
-        <div class="top-0 right-0">
-            <img class="flex align-center" :src="item.url" alt/>
-        
-            <h1 class="font-serif text-3xl text-center">{{ item.title }}</h1>
-            <h3>{{ item.caption }}</h3>
+        <div class="w-full">
+            <img class="mx-auto flex justify-center" :src="item.url" alt/>
+            <h1 class="font-serif text-4xl text-center">{{ item.title }}</h1>
+            <h3 class="font-serif text-xl text-center">{{ item.caption }}</h3>
         </div>
-        
-        
-    
 </template>
 
 <script>

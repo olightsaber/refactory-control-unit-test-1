@@ -1,14 +1,13 @@
 <template>
   <div id="app">
     <div class="flex flex-row mx-2">
-      <div class="w-1/3 flex flex-col">
+      <div class="w-1/6 flex flex-col">
         <input type="text" class="mb-4 mx-1 bg-gray-200 border-orange-300 border" v-model="url" placeholder="Url">
         <input type="text" class="mb-4 mx-1 bg-gray-200 border-orange-300 border" v-model="title" placeholder="title image">
         <input type="text" class="mb-4 mx-1 bg-gray-200 border-orange-300 border" v-model="caption" placeholder="caption image">
         <button @click="submitImg" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-1  mx-2 rounded">Submit</button>
       </div>
-
-      <MiniGallery class="w-2/3" :items="galleries"/>
+      <MiniGallery class="w-5/6" :items="galleries"/>
     </div>
     
     
